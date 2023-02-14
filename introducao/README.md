@@ -1,1 +1,1 @@
-Entendendo a Introdução do que será aprendido
+Entendendo algumas funções basicas
