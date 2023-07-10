@@ -1,0 +1,19 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Processador AMD Ryzen 5 4600G",
+        "price": 704.71
+      },
+      {
+        "id": 2,
+        "name": "Placa Mae Asus PRIME A520M-K",
+        "price": 670.47
+      },
+      {
+        "id": 3,
+        "name": "Memoria Mancer Dantalion, 16GB (2x8GB)",
+        "price": 470.47
+      }
+    ]
+  }
