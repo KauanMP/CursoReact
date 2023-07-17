@@ -57,3 +57,11 @@ form input {
   flex-direction: column;
   margin-bottom: 15px;
 }
+
+.buttonDelete {
+  background-color: red;
+  border: solid 1px rgb(153, 2, 2);
+  border-radius: 5px;
+  width: 40px;
+  margin-left: 15px;
+}

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 // 4 - custom hook
 export const useFetch = (url) => {
     const [data, setData] = useState(null)
+    const [prdtId, setPrdtId] = useState(null);
 
     // 5 - refatorando o post
     const [config, setConfig] = useState(null)
@@ -27,6 +28,15 @@ export const useFetch = (url) => {
             });
 
             setMethod(method);
+        } else if (method === "DELETE") {
+            setConfig({
+                method,
+                headers: {
+                    "Content-type": "application/json"
+                },
+            });
+            setMethod(method);
+            setPrdtId(data);
         }
     }
 
@@ -37,10 +47,10 @@ export const useFetch = (url) => {
             setLoading(true)
 
             try {
-              const res = await fetch(url);
-              const json = await res.json();
+                const res = await fetch(url);
+                const json = await res.json();
 
-              setData(json);
+                setData(json);
             } catch (error) {
                 console.log(error.message)
 
@@ -70,5 +80,20 @@ export const useFetch = (url) => {
         httpRequest();
     }, [config, method, url]);
 
-    return { data, httpConfig, loading, error};
+    useEffect(() => {
+        const dltProduct = async () => {
+            if (method === "DELETE") {
+                const urlId = `${url}/${prdtId}`
+
+                const res = await fetch(urlId, config)
+                const json = await res.json();
+
+                setCallFetch(json);
+            }
+        };
+
+        dltProduct();
+    }, [config, method, url])
+
+    return { data, httpConfig, loading, error };
 }

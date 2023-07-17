@@ -1,6 +1,6 @@
 import './App.css';
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 // 4 - Custom hook
 import { useFetch } from './hooks/useFetch';
@@ -9,10 +9,8 @@ const url = "http://localhost:3000/products"
 
 function App() {
 
-  const [products, setProducts] = useState([]);
-
   // 4 - custom
-  const { data: items, httpConfig, loading, error } = useFetch(url);
+  const { data: items, httpConfig, loading } = useFetch(url);
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -59,6 +57,10 @@ function App() {
     httpConfig(product, "POST")
   };
 
+  const deleteProduct = (id) => {
+    httpConfig(id, "DELETE")
+  }
+
   return (
     <div className="App">
       <h1>Lista de produtos</h1>
@@ -68,6 +70,13 @@ function App() {
             {items && items.map((product) => (
               <li key={product.id}>
                 {product.name} - R$: ${product.price}
+                <button 
+                className="buttonDelete" 
+                type="button" 
+                value="X" 
+                onClick={() => deleteProduct(product.id)}>
+                  X
+                </button>
               </li>
             ))}
           </ul>
