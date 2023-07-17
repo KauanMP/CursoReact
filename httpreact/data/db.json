@@ -1,19 +1,339 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Processador AMD Ryzen 5 4600G",
-        "price": 704.71
-      },
-      {
-        "id": 2,
-        "name": "Placa Mae Asus PRIME A520M-K",
-        "price": 670.47
-      },
-      {
-        "id": 3,
-        "name": "Memoria Mancer Dantalion, 16GB (2x8GB)",
-        "price": 470.47
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": 1,
+      "name": "Processador AMD Ryzen 5 4600G",
+      "price": 704.71
+    },
+    {
+      "id": 2,
+      "name": "Placa Mae Asus PRIME A520M-K",
+      "price": 670.47
+    },
+    {
+      "id": 3,
+      "name": "Memoria Mancer Dantalion, 16GB (2x8GB)",
+      "price": 470.47
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "64.80",
+      "id": 4
+    },
+    {
+      "name": "Cadeira",
+      "price": "150",
+      "id": 5
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "121",
+      "id": 6
+    },
+    {
+      "name": "ytryrt",
+      "price": "5555",
+      "id": 7
+    },
+    {
+      "name": "ytryrt",
+      "price": "5555",
+      "id": 8
+    },
+    {
+      "name": "ytryrt",
+      "price": "5555",
+      "id": 9
+    },
+    {
+      "name": "ytryrt",
+      "price": "5555",
+      "id": 10
+    },
+    {
+      "name": "mouse",
+      "price": "343",
+      "id": 11
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "222",
+      "id": 12
+    },
+    {
+      "name": "aaa",
+      "price": "33",
+      "id": 13
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "3333",
+      "id": 14
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "3333",
+      "id": 15
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "3333",
+      "id": 16
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "22",
+      "id": 17
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "22",
+      "id": 18
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "22",
+      "id": 19
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "22",
+      "id": 20
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "22",
+      "id": 21
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "22",
+      "id": 22
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "22",
+      "id": 23
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "222",
+      "id": 24
+    },
+    {
+      "name": "HeadSet Redragon",
+      "price": "222",
+      "id": 25
+    },
+    {
+      "name": "44",
+      "price": "44",
+      "id": 26
+    },
+    {
+      "name": "44",
+      "price": "44",
+      "id": 27
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 28
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 29
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 30
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 31
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 32
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 33
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 34
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 35
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 36
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 37
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 38
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 39
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 40
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 41
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 42
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 43
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 44
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 45
+    },
+    {
+      "name": "fasff",
+      "price": "4234",
+      "id": 46
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 47
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 48
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 49
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 50
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 51
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 52
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 53
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 54
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 55
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 56
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 57
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 58
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 59
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 60
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 61
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 62
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 63
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 64
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 65
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 66
+    },
+    {
+      "name": "gds",
+      "price": "22",
+      "id": 67
+    }
+  ]
+}
