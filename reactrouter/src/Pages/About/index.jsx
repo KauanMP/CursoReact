@@ -1,7 +1,8 @@
+import './index.css'
 
 const About = () => {
   return (
-    <div>Tela de sobre</div>
+    <div>Sobre</div>
   )
 }
 
