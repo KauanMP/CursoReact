@@ -1,0 +1,8 @@
+nav a {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
