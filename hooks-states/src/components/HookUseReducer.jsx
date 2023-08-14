@@ -2,6 +2,7 @@ import { useReducer, useState } from "react";
 
 const HookUseReducer = () => {
   // 1 - começando com o useReducer
+  // eslint-disable-next-line no-unused-vars
   const [number, dispatch] = useReducer((state, action) => {
     return Math.random(state);
   });
