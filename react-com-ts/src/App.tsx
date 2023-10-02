@@ -3,7 +3,7 @@ import FirstComponent from "./components/FirstComponent";
 
 // 5 - desestruturando props
 import SecondComponent from "./components/SecondComponent";
-import Destructuring from "./components/Destructuring";
+import Destructuring, { Category } from "./components/Destructuring";
 import State from "./components/State";
 
 function App() {
@@ -31,12 +31,14 @@ function App() {
         content="Algum conteudo"
         commentsQty={6}
         tags={["ts", "js"]}
+        category={Category.TS}
       />
       <Destructuring
         title="Segundo Post"
         content="Algum conteudo"
         commentsQty={2}
         tags={["ts", "js", "c#", "mongoDb"]}
+        category={Category.JS}
       />
       <State />
     </div>
