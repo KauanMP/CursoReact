@@ -13,13 +13,5 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.json({ message: "Primeira rota criada com sucesso!" });
 });
-app.post("/products", (req, res) => {
-    const products = {
-        name: "gabinete",
-        category: "computador"
-    } 
-
-    res.status(201).json(products)
-});
 
 app.listen(3000);
