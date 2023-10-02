@@ -17,7 +17,14 @@ app.post("/createproduct", (req, res) => {
   console.log(name);
   console.log(price);
 
-  res.status(201).json("Produto enviado");
+  if (!name) {
+    res.status(422).json({ message: "O campo nome é obrigatório!" });
+    return;
+  }
+
+  res
+    .status(201)
+    .json({ message: `O produto ${name} foi criado com sucesso!` });
 });
 
 app.listen(3000);
