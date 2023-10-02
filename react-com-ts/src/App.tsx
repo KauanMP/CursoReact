@@ -4,6 +4,7 @@ import FirstComponent from "./components/FirstComponent";
 // 5 - desestruturando props
 import SecondComponent from "./components/SecondComponent";
 import Destructuring from "./components/Destructuring";
+import State from "./components/State";
 
 function App() {
   // 1 - Variaveis
@@ -37,6 +38,7 @@ function App() {
         commentsQty={2}
         tags={["ts", "js", "c#", "mongoDb"]}
       />
+      <State />
     </div>
   );
 }
