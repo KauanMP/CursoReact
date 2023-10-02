@@ -1,3 +1,6 @@
+// 4 - Importação de componentes
+import FirstComponent from "./components/FirstComponent";
+
 function App() {
   // 1 - Variaveis
   const name: string = "kauan";
@@ -16,6 +19,7 @@ function App() {
       <p>Idade: {age}</p>
       {isWorking && <p>Está trabalhando!</p>}
       <h3>{userGreeting(name)}</h3>
+      <FirstComponent />
     </div>
   );
 }
