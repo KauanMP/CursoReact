@@ -1,14 +1,15 @@
-import Footer from "./components/interfaces/Footer";
-import Header from "./components/interfaces/Header";
+import styles from "./App.module.css";
+import Footer from "./components/interfaces/Footer/Footer";
+import Header from "./components/interfaces/Header/Header";
 
 function App() {
   return (
     <div>
-      <div>
-        <Header />
+      <Header />
+      <main className={styles.main}>
         <h1>Conteúdo...</h1>
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }
