@@ -4,7 +4,13 @@ import FirstComponent from "./components/FirstComponent";
 // 5 - desestruturando props
 import SecondComponent from "./components/SecondComponent";
 import Destructuring, { Category } from "./components/Destructuring";
+
+// 6 - useState
 import State from "./components/State";
+
+// 8 - type
+type textOrNull = string | null;
+type fixed = "Isso" | "Ou" | "Aquilo";
 
 function App() {
   // 1 - Variaveis
@@ -16,6 +22,14 @@ function App() {
   const userGreeting = (name: string): string => {
     return `Olá, ${name}!`;
   };
+
+  // 8 - type
+  const myText: textOrNull = "Tem algum texto aqui";
+  const mySecondtext: textOrNull = null;
+
+  // mySecondtext = "text";
+
+  const testandoFixed: fixed = "Isso";
 
   return (
     <div>
@@ -41,6 +55,8 @@ function App() {
         category={Category.JS}
       />
       <State />
+      {myText && <p>Tem texto na variável</p>}
+      {mySecondtext && <p>Tem texto na variável</p>}
     </div>
   );
 }
