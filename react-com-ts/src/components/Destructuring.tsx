@@ -27,7 +27,7 @@ const Destructuring = ({
       <p>{content}</p>
       <p>Quantidade de comentários: {commentsQty}</p>
       {tags.map((tag) => (
-        <span>#{tag}</span>
+        <span key={tag}>#{tag}</span>
       ))}
       <h4>Categoria: {category}</h4>
     </div>

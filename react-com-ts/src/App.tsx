@@ -9,6 +9,9 @@ import Destructuring, { Category } from "./components/Destructuring";
 import State from "./components/State";
 import { createContext } from "react";
 
+// 10 - Utilizando o contexto
+import Context from "./components/Context";
+
 // 8 - type
 type textOrNull = string | null;
 type fixed = "Isso" | "Ou" | "Aquilo";
@@ -20,7 +23,7 @@ interface IAppContext {
   projects: number;
 }
 
-const AppContext = createContext<IAppContext | null>(null);
+export const AppContext = createContext<IAppContext | null>(null);
 
 function App() {
   // 1 - Variaveis
@@ -75,6 +78,7 @@ function App() {
         <State />
         {myText && <p>Tem texto na variável</p>}
         {mySecondtext && <p>Tem texto na variável</p>}
+        <Context />
       </div>
     </AppContext.Provider>
   );
