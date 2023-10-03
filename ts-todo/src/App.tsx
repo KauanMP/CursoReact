@@ -2,7 +2,7 @@
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import TaskForm from "./components/Task/TaskForm";
-import TaskList from "./components/Task/taskList";
+import TaskList from "./components/Task/TaskList";
 
 // Css
 import styles from "./App.module.css";
