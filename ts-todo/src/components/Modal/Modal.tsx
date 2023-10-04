@@ -1,14 +1,21 @@
 // Css
-import styles from "./Modal";
+import styles from "./Modal.module.css";
 
-interface Props {}
+interface Props {
+  children: React.ReactNode;
+}
 
-const Modal = (props: Props) => {
+const Modal = ({ children }: Props) => {
+  const closeModal = (e: React.MouseEvent): void => {
+    const modal = document.querySelector("#modal");
+    modal!.classList.add("hide");
+  };
   return (
-    <div id="modal">
-      <div></div>
-      <div>
+    <div id="modal" className="hide">
+      <div className={styles.fade} onClick={closeModal}></div>
+      <div className={styles.modal}>
         <h2>texto modal</h2>
+        {children}
       </div>
     </div>
   );
