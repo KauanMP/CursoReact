@@ -12,11 +12,21 @@ import { ITask } from "./interfaces/Task";
 
 // States
 import { useState } from "react";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   const [taskList, setTaskList] = useState<ITask[]>([]);
+
+  const deleteTask = (id: number): void => {
+    setTaskList(
+      taskList.filter((task) => {
+        return task.id !== id;
+      })
+    );
+  };
   return (
     <div>
+      <Modal />
       <Header />
       <main className={styles.main}>
         <div>
@@ -29,7 +39,7 @@ function App() {
         </div>
         <div>
           <h2>Suas tarefas:</h2>
-          <TaskList taskList={taskList} />
+          <TaskList taskList={taskList} handleDelete={deleteTask} />
         </div>
       </main>
       <Footer />

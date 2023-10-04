@@ -39,6 +39,7 @@ const TaskForm = ({ btnText, taskList, setTaskList }: Props) => {
       setDifficulty(parseInt(e.target.value));
     }
   };
+
   return (
     <form className={styles.form} onSubmit={addTaskHandler}>
       <div className={styles.inputContainer}>
